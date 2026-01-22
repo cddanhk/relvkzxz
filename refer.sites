@@ -20,9 +20,13 @@ https://blog.csdn.net/QueSera169/article/details/156984598
 https://blog.csdn.net/QueSera169/article/details/156773001?spm=1001.2014.3001.5501
 https://blog.csdn.net/QueSera169/article/details/156773001
 https://www.cnblogs.com/zblblog/p/18778953
+
+https://www.cnblogs.com/zblblog/p/18778953
+
 nginx配置有关
 https://blog.csdn.net/chenchuang0128/article/details/143952088
-
+wx
+https://mp.weixin.qq.com/s/dW791pcuxTxJRcb2LGIC6g
 
 
 ###################################################
@@ -49,10 +53,13 @@ https://my.oschina.net/emacs_9720004/blog/19139564
 https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/redhat_linux/systemd/systemd_networkd.html
 
 ###################################################
-# others
+# cmds
 ###################################################
-
-
+ffmpeg  -re -i 12.mp4 -c:v libx264 -preset ultrafast -tune  zerolatency -profile:v baseline -level 3.0  -pix_fmt yuv420p -g 60 -keyint_min 60 -maxrate 2000k -bufsize 4000k -c:a aac -b:a 128k -ar 44100 -ac 2 -f flv  rtmp://127.0.0.1:1935/live/stream_12
+ffmpeg -re -i test-lesson.mp4 -c:v libx264 -c:a aac -f flv rtmp://localhost:1935/live/stream_key
+https://gitcode.com/gh_mirrors/ff/ffmpeg-rockchip/?utm_source=gitcode_aigc_v1_t1&index=bottom&type=card&uuid_tt_dd=10_30711707670-1767512438971-414496&from_id=156255409&from_link=e2029229bdf9f8ca2d2705f42e9fd43b
+ubuntu系统搭建nginx-rtmp流媒体服务器
+https://mp.weixin.qq.com/s/dW791pcuxTxJRcb2LGIC6g
 
 ###################################################
 # others

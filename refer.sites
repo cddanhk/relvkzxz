@@ -109,3 +109,49 @@ https://blog.csdn.net/qq_29752857/article/details/132320679?utm_medium=distribut
 
 
 
+遗失的文件
+https://github.com/1002victor/zlm_webassist/tree/main
+https://github.com/1002victor/zlm_webassist
+附带更新脚本，未验证
+#######################################################
+webassist 更新脚本 开始
+#######################################################
+#!/bin/bash
+
+# 更新ZLMediaKit的webassist文件夹脚本
+# 1. 克隆或更新ZLMediaKit仓库
+echo "正在更新ZLMediaKit仓库..."
+git clone --recursive https://github.com/ZLMediaKit/ZLMediaKit.git || git pull --recurse-submodules
+
+# 2. 进入ZLMediaKit目录
+cd ZLMediaKit
+
+# 3. 更新子模块webassist
+echo "正在更新webassist子模块..."
+git submodule update --init --recursive
+
+# 4. 检查webassist目录是否存在
+if [ -d "www/webassist" ]; then
+    echo "webassist目录已存在，准备更新..."
+    # 5. 更新webassist子模块
+    git submodule update --remote www/webassist
+else
+    echo "webassist目录不存在，正在创建..."
+    mkdir -p www/webassist
+fi
+
+# 6. 检查是否需要从第三方仓库获取
+echo "检查第三方webassist仓库..."
+if [ -d "www/webassist" ]; then
+    # 如果存在，尝试从gitee获取最新版本
+    echo "从gitee获取webassist最新版本..."
+    git submodule set-url www/webassist https://gitee.com/victor1002/zlm_webassist.git
+    git submodule update --remote www/webassist
+fi
+
+echo "webassist更新完成！"
+
+#######################################################
+webassist 更新脚本 结束
+#######################################################
+

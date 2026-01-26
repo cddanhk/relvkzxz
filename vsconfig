@@ -10,6 +10,30 @@ https://code.visualstudio.com/updates/v1_86
 同理1.85
 
 
+vs安装插件的方法
+https://blog.csdn.net/hexf9632/article/details/130349918
+
+目前安装的插件如下:
+本地
+Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
+v1.85.2024021409
+
+DeviceTree
+One Dark Pro
+Remote - SSH
+Remote - SSH: Editing Configuration Files
+
+
+远端安装如下:
+C/C++
+Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
+Code Runner
+indent-rainbow
+One Dark Pro
+
+
+
+
 
 离线安装 -- 没有用到
 https://blog.csdn.net/johns78m/article/details/130482481

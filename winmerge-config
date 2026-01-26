@@ -1,0 +1,6 @@
+f: \.ext$ ## Filter for filename
+#f: \\*.o$
+f: \.o$
+
+d: \\subdir$ ## Filter for directory
+d: \\2.2

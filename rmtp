@@ -1,0 +1,51 @@
+############################################
+# rmtp 拉流/推流
+# rtsp 拉流/推流
+############################################
+
+
+#rtmp 拉流性能测试
+https://docs.zlmediakit.com/zh/reference/test/rtmp_pull_stream_performance_test.html
+
+#快速开始
+https://docs.zlmediakit.com/zh/tutorial/
+
+#ZLMediaKit----API使用
+https://blog.csdn.net/k673656/article/details/143605310
+
+#把这两个json文件导入postman就可以愉快的测试ZLMediaKit的restful接口了
+https://github.com/ZLMediaKit/ZLMediaKit/tree/master/postman
+
+
+
+#用ZLMediaKit进行拉流转发
+https://blog.csdn.net/v6543210/article/details/107606723
+
+#vcpkg方式安装zlmediakit
+https://github.com/ZLMediaKit/ZLMediaKit/wiki/vcpkg%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85zlmediakit
+
+
+
+
+
+#############################################################
+# 这里都没有仔细看
+# 
+https://gitcode.com/gh_mirrors/ff/ffmpeg-rockchip/tree/master
+https://blog.csdn.net/gitblog_00288/article/details/156255409
+#############################################################
+
+
+在RK3588上使用ZLMediaKit
+https://blog.csdn.net/Taylor_0522/article/details/147353175
+
+全网最细万字教学！RK3588使用ffmpeg+rkmpp硬解码+DRM渲染显示MP4视频【纯代码】
+https://blog.csdn.net/m0_57724069/article/details/144934724
+
+ffmpeg-rockchip RK3588 armbian小盒子上编译rk硬件加速
+https://blog.csdn.net/baoecit/article/details/145884972
+
+手把手教你搭建 Nginx-RTMP 流媒体服务器（Ubuntu/Windows）
+https://developer.aliyun.com/article/1706880
+
+

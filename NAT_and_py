@@ -84,4 +84,34 @@ iptables -t nat -A POSTROUTING -o eth1 -j SNAT --to-source 192.168.1.111
 iptables -t nat -D POSTROUTING -o eth1 -j SNAT --to-source 192.168.1.111
 iptables -t nat -F POSTROUTING
 
+##########################################################################################
+# tcpdump
+##########################################################################################
+tcpdump -i any icmp
+tcpdump -i br0 icmp -X -e
+
+# ip rule
+0:      from all lookup local
+1:      from all lookup 201
+1:      from all lookup 200
+32766:  from all lookup main
+32767:  from all lookup default
+~ # ip rule show  table 201
+~ # ip route show  table 201
+192.168.200.0/24 via 192.168.43.128 dev usb0
+192.168.205.0/24 via 192.168.43.128 dev usb0
+~ # ip rule show  table 201
+~ # ping 192.168.XX
+253.254
+
+tcpdump -i br0
+
+#AP
+ssh root@192.168.XX
+200.254
+root@wx-ap# ls
+root@wx-ap# ssh root@192.168.XX
+43.129 -p 10033
+
+
 

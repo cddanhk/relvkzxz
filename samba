@@ -1,0 +1,51 @@
+
+
+
+sudo apt-get update
+
+sudo apt-get install openssh-client
+sudo apt-get install openssh-server
+
+/etc/init.d/ssh start
+
+sudo ps -e | grep ssh
+
+################################################################
+# samba
+################################################################
+sudo apt-get install samba
+
+sudo apt-get install smbclient
+
+安装完成后执行
+
+samba -V
+
+sudo vi /etc/samba/smb.conf
+
+写入配置
+
+[EX_DISK_A]
+   comment = share folder
+   browseable = yes
+   path = /home/wucaicheng/tspi
+   valid users = wucaicheng, wucaicheng
+   write list = wucaicheng, wucaicheng
+   inherit owner = yes
+   browsable = yes
+   admin users = wucaicheng, wucaicheng
+   public = yes
+   writable = yes
+   create mask = 0755
+   read only = No
+   directory mode = 0755
+
+设置用户远程访问密码
+sudo smbpasswd -a wucaicheng
+
+重启
+sudo /etc/init.d/samba restart
+或者
+sudo service smbd restart
+
+然后直接映射即可

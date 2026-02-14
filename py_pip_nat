@@ -12,6 +12,8 @@ pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/
 豆瓣：https://pypi.douban.com/simple/
 中科大：https://pypi.mirrors.ustc.edu.cn/simple/
 
+有描述换源/rknn over rk3566
+https://github.com/MrHarsh10/tspi_-RKNN_MobileNetV3
 
 ## 查看
 iptables -t nat -L -n -v
